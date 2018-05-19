@@ -16,7 +16,7 @@
 | wx-width | `Number` |`N`| `600` | 长度 |
 | wx-color | `String` |`N`| `#42b983` | 颜色 |
 | wx-bgColor | `String` |`N`| `#EEEEEE` | 进度底色 |
-| wx-radius | `Number` |`N`| `0` | 圆角 |
+| wx-radius | `Number` |`N`| `5` | 圆角 |
 | duration | `Number` |`N`| `2000` | 动画时长 |
 
 ### 环形进度条
@@ -26,11 +26,11 @@
 ##### 可配置参数
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|
-| value | `Number` |`Y`| `0` | 百分比`(0-100)` |
+| percent | `Number` |`Y`| `0` | 百分比`(0-100)` |
 | wxc-color | `String` |`N`| `#42b983` | 颜色 |
 | wxc-bgColor | `String` |`N`| `#EEEEEE` | 进度底色 |
-| wxc-radius | `Number` |`N`| `0` | 半径 |
-| wxc_stokenWidth | `Number` |`N`| `0` | 环形宽度 |
+| wxc-radius | `Number` |`N`| `100` | 半径 |
+| wxc_stokenWidth | `Number` |`N`| `4` | 环形宽度 |
 | duration | `Number` |`N`| `2000` | 动画时长 |
 
 

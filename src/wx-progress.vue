@@ -1,6 +1,6 @@
 <template>
   <div :style="graphStyle">
-    <div class="wx_wx_bg" :style="bgStyle"></div>
+    <div class="wx_bg" :style="bgStyle"></div>
     <div ref="wx_bar" class="wx_bar" :style="barStyle"></div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
         },
         wx_radius: {
             type: Number,
-            default: 10
+            default: 5
         },
         wx_width: {
             type: Number,
@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style scoped>
-  .wx_wx_bg {
+  .wx_bg {
     position: absolute;
   }
   .wx_bar {
