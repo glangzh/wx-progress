@@ -1,0 +1,19 @@
+{
+  "name": "wx-progress",
+  "version": "1.0.0",
+  "description": "一个weex进度条组件",
+  "main": "index.js",
+  "type": "weex",
+  "repository": "https://github.com/glangzh/wx-progress",
+  "keywords": [
+    "Weex",
+    "Vue",
+    "WeexComponent",
+    "Feedback",
+    "Progress",
+    "Circle",
+    "Weex Ui"
+  ],
+  "author": "zhaofg",
+  "license": "MIT"
+}
