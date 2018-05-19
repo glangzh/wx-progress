@@ -48,7 +48,7 @@ export default {
         }
       },
       barStyle () {
-        const { wx_radius, wx_width, wx_height, wx_color, percent } = this;
+        const { wx_radius, wx_height, wx_color } = this;
         return {
             height: `${wx_height}px`,
             width: `${0}px`,

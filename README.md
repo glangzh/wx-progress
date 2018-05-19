@@ -3,6 +3,10 @@
 > Weex 进度条组件
 
 ## 使用方法
+### 安装
+```javascript
+npm i wx-progress --save
+```
 
 ### 水平进度条
 ```javascript
@@ -34,4 +38,4 @@
 | duration | `Number` |`N`| `2000` | 动画时长 |
 
 
-更详细代码可以参考 [demo](demo/index.vue)
+更详细效果可以参考 [demo](demo/index.vue)
