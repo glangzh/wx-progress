@@ -1,7 +1,8 @@
 # wx-progress 
 
-> Weex 进度条组件
+> 纯 Weex 实现的水平进度条，圆形进度条
 
+ [![npm](https://img.shields.io/npm/v/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress) [![npm](https://img.shields.io/npm/dt/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress) [![npm](https://img.shields.io/npm/l/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress)
 ## 使用方法
 ### 安装
 ```javascript
@@ -12,6 +13,7 @@ npm i wx-progress --save
 ```javascript
 <wx-progress :percent='50' :wx_width='650'></wx-progress>
 ```
+![](image/wx-p.gif)
 ##### 可配置参数
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|

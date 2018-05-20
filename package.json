@@ -6,13 +6,13 @@
   "type": "weex",
   "repository": "https://github.com/glangzh/wx-progress",
   "keywords": [
+    "wx-progress",
     "Weex",
     "Vue",
     "WeexComponent",
     "Feedback",
     "Progress",
-    "Circle",
-    "Weex Ui"
+    "Circle"
   ],
   "author": "zhaofg",
   "license": "MIT"
