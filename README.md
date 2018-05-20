@@ -13,7 +13,6 @@ npm i wx-progress --save
 ```javascript
 <wx-progress :percent='50' :wx_width='650'></wx-progress>
 ```
-![](image/wx-p.gif)
 ##### 可配置参数
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|
