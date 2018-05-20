@@ -1,6 +1,6 @@
 # wx-progress 
 
-> 纯 Weex 实现的水平进度条，圆形进度条
+> 一个 Weex 的水平，圆形进度条
 
  [![npm](https://img.shields.io/npm/v/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress) [![npm](https://img.shields.io/npm/dt/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress) [![npm](https://img.shields.io/npm/l/wx-progress.svg?style=flat-square)](https://www.npmjs.com/package/wx-progress)
 ## 使用方法
