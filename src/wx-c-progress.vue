@@ -1,10 +1,13 @@
 <template>
-  <div class="wx_container" :style="containerStyle">
-    <div ref="wx_circle" class="wx_circle" :style="circleStyle"></div>
-    <div ref="wx_left" class="wx_left-box" :style="leftStyle"></div>
-    <div ref="wx_right" class="wx_right-box" :style="rightStyle"></div>
-    <div class="wx_innerCircle" :style="innerCircleStyle">
-      <slot></slot>
+  <div class="wx_c">
+    <div class="wx_container" :style="containerStyle">
+        <div ref="wx_circle" class="wx_circle" :style="circleStyle"></div>
+        <div ref="wx_left" class="wx_left-box" :style="leftStyle"></div>
+        <div ref="wx_right" class="wx_right-box" :style="rightStyle"></div>
+        <div v-if="rightMask" class="wx_right-box" :style="rightStyle_mask"></div>
+        <div class="wx_innerCircle" :style="innerCircleStyle">
+            <slot></slot>
+        </div>
     </div>
   </div>
 </template>
@@ -14,6 +17,11 @@
 const animation = weex.requireModule('animation');
 
 export default {
+    data () {
+        return{
+            rightMask:false
+        }
+    },
     props: {
         wxc_color: {
             type: String,
@@ -88,7 +96,17 @@ export default {
             borderTopRightRadius: `${wxc_radius}px`,
             borderBottomRightRadius: `${wxc_radius}px`
         }
-      }
+	  },
+      rightStyle_mask(){
+        const { wxc_radius, wxc_Color } = this;
+        return {
+            height: `${wxc_radius * 2}px`,
+            width: `${wxc_radius}px`,
+            backgroundColor: wxc_color,
+            borderTopRightRadius: `${wxc_radius}px`,
+            borderBottomRightRadius: `${wxc_radius}px`
+        }
+      },
     },
     mounted() {
         this.percent = this.percent > 100 ? 100 : (this.percent < 0 ? 0: this.percent); // 校正数据
@@ -112,6 +130,9 @@ export default {
             }, () => {
                 if(percent >= 50){
                     if(end){
+                        if(this.$getConfig().env.platform.toLowerCase() == 'ios'){
+                            this.rightMask = true;
+                        }
                         this.leftAnim(percent);
                     } else {
                         this.rightAnim(percent, true);
@@ -141,6 +162,10 @@ export default {
 </script>
 
 <style scoped>
+  .wx_c {
+    justify-content: center;
+    align-items: center;
+  }
   .wx_container {
     justify-content: center;
     align-items: center;

@@ -44,7 +44,8 @@ export default {
       graphStyle () {
         const { wx_width, wx_height } = this;
         return {
-            width: `${wx_width}px`
+            width: `${wx_width}px`,
+            height: `${wx_height}px`
         }
       },
       barStyle () {
