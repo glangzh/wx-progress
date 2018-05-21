@@ -13,6 +13,7 @@ npm i wx-progress --save
 ```javascript
 <wx-progress :percent='50' :wx_width='650'></wx-progress>
 ```
+![](image/20180521-1.jpg)
 ##### 可配置参数
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|
@@ -28,6 +29,7 @@ npm i wx-progress --save
 ```javascript
 <wx-c-progress :percent="60" :wx-radius='100'></wx-c-progress>
 ```
+![](image/20180521-2.jpg)
 ##### 可配置参数
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|
@@ -40,3 +42,5 @@ npm i wx-progress --save
 
 
 更详细效果可以参考 [demo](demo/index.vue)
+
+![](image/20180521-3.png)
