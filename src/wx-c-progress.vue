@@ -98,7 +98,7 @@ export default {
         }
 	  },
       rightStyle_mask(){
-        const { wxc_radius, wxc_Color } = this;
+        const { wxc_radius, wxc_color } = this;
         return {
             height: `${wxc_radius * 2}px`,
             width: `${wxc_radius}px`,
